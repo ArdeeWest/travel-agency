@@ -1,0 +1,49 @@
+// .wrapper {
+//   background: url(../img/hero.jpg) rgba(0, 0, 0, 0.2);
+//   background-position: top;
+//   background-repeat: no-repeat;
+//   background-size: 100% auto;
+//   background-blend-mode: overlay;
+// }
+.header {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo-pic {
+      width: 40px;
+      height: 57px;
+    }
+
+    &__list {
+      @include font($ff: 'Montserrat Regular', $fs: 16px);
+      color: $main-text-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    &__link {
+      color: inherit;
+      display: block;
+      padding: 46px 0;
+      transition: color 280ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &--current {
+        color: $accent-text-color;
+      }
+
+      &:hover,
+      &:focus {
+        color: $accent-text-color;
+      }
+    }
+  }
+}
