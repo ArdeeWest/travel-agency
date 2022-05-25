@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'fonts';
+body {
+  background-color: $main-bg-color;
+  font-family: 'Montserrat Regular', sans-serif;
+  font-size: 14px;
+  background: url(../img/hero.jpg) rgba(0, 0, 0, 0.2);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-blend-mode: overlay;
+}
