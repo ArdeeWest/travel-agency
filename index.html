@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,29 +12,57 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html">Логотип сайта</a>
-
-      <nav>
-        <ul>
-          <li><a href="/">Главная</a></li>
-          <li><a href="/">Экскурсии</a></li>
-          <li><a href="/">Личный кабинет</a></li>
-        </ul>
-      </nav>
+    <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <a class="menu__logo" href="./index.html"
+            ><img class="menu__logo-pic" src="./img/logo.svg" alt="Logo of the Solo Travel Agency"
+          /></a>
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link menu__link--current" href="/">Main</a></li>
+            <li class="menu__item"><a class="menu__link" href="/">Excursions</a></li>
+            <li class="menu__item"><a class="menu__link" href="/">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>Путешествуй вместе с <span lang="en">Pero Travel</span></h1>
-        <a href="/">К экскурсиям</a>
-        <ul>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Facebook</a></li>
-        </ul>
+      <section class="hero">
+        <div class="container">
+          <ul class="socials-list">
+            <li class="socials-list__item">
+              <a class="socials-list__link" href=""
+                ><svg class="socials-list__icon"><use href="./img/icons.svg#icons-youtube"></use></svg></a>
+            </li>
+            <li class="socials-list__item">
+              <a class="socials-list__link" href=""
+                ><svg class="socials-list__icon"><use href="./img/icons.svg#instagram"></use></svg></a>
+            </li>
+            <li class="socials-list__item">
+              <a class="socials-list__link" href=""
+                ><svg class="socials-list__icon"><use href="./img/icons.svg#facebook"></use></svg></a>
+            </li>
+          </ul>
+          
+          <h1 class="hero__title">wandering
+            <span class="hero__title-word">with</span> <span class="hero__title-brand">Solo Travel</span></h1>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+  <defs>
+    <filter id="stroke-text-svg-filter">
+      <feMorphology operator="dilate" radius="2"></feMorphology>
+      <feComposite operator="xor" in="SourceGraphic"/>
+    </filter>
+  </defs>
+</svg>
+
+          <a class="hero__btn" href="/">Excursions</a>
+        </div>
       </section>
+      </div>
 
       <section>
         <h2>Популярные экскурсии</h2>
