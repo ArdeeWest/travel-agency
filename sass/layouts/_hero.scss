@@ -36,6 +36,7 @@
     @include font($ff: 'Montserrat Bold', $fw: 700, $fs: 72px);
     color: $main-text-color;
     text-transform: uppercase;
+    margin-bottom: 70px;
   }
 
   &__title-word {
@@ -51,5 +52,36 @@
     display: block;
     color: #ffffff;
     filter: url(#stroke-text-svg-filter);
+  }
+
+  &__btn {
+    @include font($ff: 'Montserrat Bold', $fw: 700);
+    display: inline-flex;
+    flex-direction: row-reverse;
+
+    padding: 17px 53px;
+
+    color: $main-text-color;
+    background-color: $main-btn-color;
+
+    text-align: center;
+    border-radius: 60px;
+    transition: all 900ms ease-in-out;
+
+    background: {
+      image: linear-gradient(45deg, $accent-text-color 50%, transparent 50%);
+      position: 100%;
+      size: 400%;
+    }
+
+    &:hover {
+      background-position: 0;
+    }
+  }
+
+  &__btn-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
   }
 }
